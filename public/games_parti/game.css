@@ -163,12 +163,12 @@ header a{
 }
 
 .slide .item:nth-child(3) {
-    left: 50%;
+    left: calc(50% + 250px);
     transform: translate(-50%, -50%);
 }
 
 .slide .item:nth-child(4) {
-    left: calc(50% + 220px);
+    left: calc(50% + 300px);
     transform: translate(0, -50%) scale(0.95);
 }
 
@@ -198,7 +198,7 @@ header a{
 
 .slide .item:nth-child(2) .content {
     display: block;
-    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .content .name {
@@ -208,14 +208,6 @@ header a{
     opacity: 0;
     animation: animate 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     color: #00ffff;
-}
-
-.content .des {
-    margin: 15px 0 25px;
-    font-size: 18px;
-    color: #00ffff;
-    opacity: 0;
-    animation: animate 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
 }
 
 .content button {
