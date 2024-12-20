@@ -57,9 +57,9 @@ window.onload = function() {
     // Define the background images for Valorant and BGMI
     const valorantImages = [
         "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828214/IMG20230310140627_hahwzr.jpg",
-        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1730036780/DSC00332_1_kho9eh.jpg",
-        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1730036777/DSC00179_1_i1kqka.jpg",
-        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733832563/wtxzs4mh7djuoz801duv.jpg",
+        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722838/DSC00332_1_kho9eh_qr24it.jpg",
+        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1734723078/valo1_1_hczqrv.jpg",
+        "https://res.cloudinary.com/dq2skbvkx/image/upload/v1734211711/IMG20230310130447_amr2yc_gzqaii.jpg",
         "https://res.cloudinary.com/duf3hruwc/image/upload/v1733854721/lh0hizd1w4a7pku1kran.jpg"
     ];
     
@@ -69,16 +69,16 @@ window.onload = function() {
         "https://res.cloudinary.com/duf3hruwc/image/upload/v1733853245/jpq1qwiy0ytgyobszkdc.jpg",
         "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733930499/b70cvd0i8orkzmtfajxp.jpg",
         "https://wallpaperaccess.com/thumb/9905503.jpg",
-        "https://wallpaperaccess.com/thumb/8982739.jpg"
+        
     ];
 
     const CSGO=[]
 
-    const Fifa=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828647/s9xnodyzw3r3kmbp5ev1.jpg",
+    const Fifa=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722916/fifa_1_ybnbjr.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844753/ropcu3koznwoiqrjoxq4.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828217/DSC06719_hr5tlg.jpg"
 ,"https://res.cloudinary.com/duf3hruwc/image/upload/v1733856393/uyntqhckfnfh6fblqslq.jpg",
-"https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828599/ofuyqtwrdoibsfzprybz.jpg"]
+"https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722775/s9xnodyzw3r3kmbp5ev1_1_m5iw8j.jpg"]
 
     const CR=[]
 
@@ -122,7 +122,7 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
             }
         });
     }
-    let valoText=["Lockdown","Avalanche 2.0","Avalanche 2.0","Glitchpop 3.0","Glitchpop 2.0"]
+    let valoText=["Glitchpop 2.0","Avalanche 2.0","Glitchpop 3.0","Glitchpop 2.0","Glitchpop 3.0"]
     let fifaText=["Glitchpop 3.0","T vs M","Glitchpop 3.0","Glitchpop","Glitchpop"]
     let Mine=["Cubewars","Cubewars","Cubewars","Cubewars","Cubewars"]
     let rocket=["Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0"]
