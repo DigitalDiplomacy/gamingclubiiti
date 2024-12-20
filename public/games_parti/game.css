@@ -483,10 +483,7 @@ footer {
         font-size: 24px;
     }
 
-    .content .des {
-        font-size: 13px;
-    }
-
+    
     .button {
         bottom: 10px;
     }
@@ -580,9 +577,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .content .des {
-        font-size: 0.65rem;
-    }
+    
 
     .button {
         bottom: 0.625rem;
@@ -613,10 +608,6 @@ footer {
 
     header .logo {
         font-size: 1.25em;
-    }
-
-    .content .des {
-        display: none;
     }
 
     .container {

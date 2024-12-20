@@ -247,25 +247,6 @@ header .logo:hover {
     transform: translateY(0);
 }
 
-.herocard h2 {
-    margin: 0 0 10px;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-.herocard p {
-    font-size: clamp(0.875rem, 2vw, 1rem);
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height var(--transition-speed) ease, opacity var(--transition-speed) ease;
-}
-
-.herocard:hover p {
-    max-height: 200px;
-    opacity: 1;
-}
-
-
 main {
     margin: 7px;
     padding: 37px 6%;
@@ -849,16 +830,12 @@ footer {
         margin-top: -1.69%;
     }
 
-    .herocard h2 {
-        font-size: 1.0rem;
-    }
+   
     .herocard{
         margin-bottom: 2px;
         padding-bottom: 20px;
     }
-    .herocard p {
-        font-size: 0.8rem;
-    }
+   
     /* Main content adjustments */
     main {
         padding: 2% 3%;

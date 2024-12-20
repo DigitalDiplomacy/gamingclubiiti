@@ -71,15 +71,12 @@ window.onload = function() {
         
     ];
 
-    const CSGO=[]
 
     const Fifa=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722916/fifa_1_ybnbjr.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844753/ropcu3koznwoiqrjoxq4.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828217/DSC06719_hr5tlg.jpg"
 ,"https://res.cloudinary.com/duf3hruwc/image/upload/v1733856393/uyntqhckfnfh6fblqslq.jpg",
 "https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722775/s9xnodyzw3r3kmbp5ev1_1_m5iw8j.jpg"]
-
-    const CR=[]
 
     const Minecraft=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849274/kois6hhlo6l9o6jpqiw4.jpg",
     "https://res.cloudinary.com/duf3hruwc/image/upload/v1733849273/nhrxq0p3f7gejgcmcpd4.jpg",
@@ -90,7 +87,9 @@ window.onload = function() {
 
 const MortalKombat=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844752/ma2pzuojuj6nor5xn5eq.jpg",
 "https://res.cloudinary.com/duf3hruwc/image/upload/v1733855768/gm9mrnhelyk8as2dbpvh.jpg",
-"https://res.cloudinary.com/duf3hruwc/image/upload/v1734720758/WhatsApp_Image_2024-12-09_at_17.11.10_59d08aaf_ukapfg.jpg"
+"https://res.cloudinary.com/duf3hruwc/image/upload/v1734720758/WhatsApp_Image_2024-12-09_at_17.11.10_59d08aaf_ukapfg.jpg",
+"https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844752/ma2pzuojuj6nor5xn5eq.jpg",
+"https://res.cloudinary.com/duf3hruwc/image/upload/v1733855768/gm9mrnhelyk8as2dbpvh.jpg",
 ]
 
 const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fygb6uu8njtq9b13uxwx.jpg",
@@ -122,12 +121,11 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
         });
     }
     let valoText=["Glitchpop 2.0","Avalanche 2.0","Glitchpop 3.0","Glitchpop 2.0","Glitchpop 3.0"]
-    let fifaText=["Glitchpop 3.0","T vs M","Glitchpop 3.0","Glitchpop","Glitchpop"]
+    let fifaText=["Glitchpop 3.0","T vs M","Glitchpop 3.0","Glitchpop 3.0","Glitchpop 3.0"]
     let Mine=["Cubewars","Cubewars","Cubewars","Cubewars","Cubewars"]
     let rocket=["Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0"]
     let tekken=["T VS M","T VS M","IronWill","T VS M","T VS M"]
     let bgmiText=["UnderDogs","UnderDogs","UnderDogs","Freshers Cup","Freshers Cup","Freshers Cup"]
-    let CRtext=[]
     // Check the game and set the respective images
     if (game === 'Valorant') {
         setBackgroundImages(valorantImages);
@@ -140,14 +138,6 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
     else if(game==='Fifa'){
         setBackgroundImages(Fifa);
         setText(fifaText);
-    }
-    else if(game==='CSGO'){
-        setBackgroundImages(CSGO);
-        setText(csgo);
-    }
-    else if(game==='CR'){
-        setBackgroundImages(CR);
-        setText(CRtext);
     }
     else if(game==='Minecraft'){
         setBackgroundImages(Minecraft);
