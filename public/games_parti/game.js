@@ -72,13 +72,7 @@ window.onload = function() {
         "https://wallpaperaccess.com/thumb/8982739.jpg"
     ];
 
-    const CSGO=["https://wallpaperaccess.com/full/963561.jpg",
-    "https://wallpaperaccess.com/full/1494924.jpg",
-    "https://wallpaperaccess.com/thumb/10785225.jpg",
-    "https://wallpaperaccess.com/full/147188.png",
-    "https://wallpaperaccess.com/full/1409318.jpg",
-    "https://wallpaperaccess.com/full/8689468.jpg",
-    "https://wallpaperaccess.com/full/1819770.jpg"]
+    const CSGO=[]
 
     const Fifa=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828647/s9xnodyzw3r3kmbp5ev1.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844753/ropcu3koznwoiqrjoxq4.jpg",
@@ -86,11 +80,7 @@ window.onload = function() {
 ,"https://res.cloudinary.com/duf3hruwc/image/upload/v1733856393/uyntqhckfnfh6fblqslq.jpg",
 "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828599/ofuyqtwrdoibsfzprybz.jpg"]
 
-    const CR=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1734212180/Screenshot_2024-12-15_030552_go3j5j.png",
-"https://wallpaperaccess.com/full/8212949.jpg",
-"https://wallpaperaccess.com/full/1396423.jpg",
-"https://wallpaperaccess.com/full/1396424.jpg",
-"https://res.cloudinary.com/dq2skbvkx/image/upload/c_thumb,w_200,g_face/v1734211986/WhatsApp_Image_2024-12-14_at_09.01.42_c91128ba_mabpxy.jpg",]
+    const CR=[]
 
     const Minecraft=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849274/kois6hhlo6l9o6jpqiw4.jpg",
     "https://res.cloudinary.com/duf3hruwc/image/upload/v1733849273/nhrxq0p3f7gejgcmcpd4.jpg",
@@ -138,7 +128,7 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
     let rocket=["Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0"]
     let tekken=["T VS M","T VS M","IronWill","T VS M","T VS M"]
     let bgmiText=["UnderDogs","UnderDogs","UnderDogs","Freshers Cup","Freshers Cup","Freshers Cup"]
-    let CRtext=["Glitchpop","Glitchpop","Glitchpop"]
+    let CRtext=[]
     // Check the game and set the respective images
     if (game === 'Valorant') {
         setBackgroundImages(valorantImages);
