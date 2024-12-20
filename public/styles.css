@@ -825,14 +825,7 @@ footer {
         font-size: 20px;
         color: var(--primary-color);
     }
-    .side-navbar-close {
-        position: absolute;
-        top: 0.64rem;
-        right: 0.64rem;
-        color: #00ffff;
-        font-size: 1.52rem;
-        cursor: pointer;
-    }
+   
     .trans {
         padding: 40px 50px;
         grid-template-columns: 1fr;
@@ -855,10 +848,10 @@ footer {
         height: 57.69%;
     }
     .card-container .card .content p{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .navigation-buttons{
-        margin-top: -15%;
+        margin-top: -16.69%;
     }
 }
 
@@ -928,17 +921,17 @@ footer {
         font-size: 15px;
     }
     .card-container .flex .card .content{
-        padding-bottom:269px;
+        padding-bottom:339px;
     }
     .card-container .flex .card .content .heading{
         padding-top: 80px;
         font-size: 15.69px;
     }
     .card-container .flex .card .content .info{
-        font-size: 10px;
+        font-size: 9px;
     }
     .navigation-buttons{
-        margin-top: -20%;
+        margin-top: -20.69%;
     }
 }
 
@@ -1124,14 +1117,7 @@ footer {
         width: 230px;
         padding-left: 25px;
     }
-    .side-navbar-close {
-        position: absolute;
-        top: 0.64rem;
-        right: 0.64rem;
-        color: #00ffff;
-        font-size: 1.52rem;
-        cursor: pointer;
-    }
+   
     .trans {
         padding: 40px 50px;
         grid-template-columns: 1fr;

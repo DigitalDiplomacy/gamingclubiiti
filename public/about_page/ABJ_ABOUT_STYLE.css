@@ -174,12 +174,7 @@ header .logo:hover {
    70%,100%  {transform:rotate(calc(var(--s,1)*180deg))}
   }
 
-  .mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: var(--primary-color);
-  }
+
 
 /*Hero*/
 .kuch{
@@ -782,9 +777,9 @@ footer {
         display: block;
         position: absolute;
         top: 1.465rem;
-        right: 0.6rem;
+        right: 0.69rem;
         cursor: pointer;
-        font-size: 16.5px;
+        font-size: 17.69px;
         color: var(--primary-color);
     }
 
@@ -799,8 +794,9 @@ footer {
         z-index: 999;
         transition: 0.3s;
         overflow-y: auto;
+         /* Important - ensure it doesn't block pointer events */
+        pointer-events: auto;
     } 
-    
     
     .side-navbar ul {
         font: 1em sans-serif;
@@ -810,7 +806,6 @@ footer {
     }
     
     .side-navbar ul li {
-        color: #00ffff;
         padding: 15px 30px;
     }
     
@@ -826,14 +821,23 @@ footer {
     }
     
     /* Close button for side navbar */
-    .close-btn {
+   .side-navbar .close-btn {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 16.69px;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
         font-size: 24px;
         color: var(--primary-color);
         cursor: pointer;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    
     /* Hero section adjustments */
     .hero-container {
         height: calc(48.69vh - 60px);

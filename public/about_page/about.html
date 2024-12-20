@@ -487,13 +487,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-btn');
 
     mobileMenuIcon.addEventListener('click', function() {
-        console.log('Hi');
         sideNavbar.classList.add('active');
         mobileMenuIcon.style.display='none';
     });
 
     closeBtn.addEventListener('click', function() {
-        console.log('Hi');
         sideNavbar.classList.remove('active');
         closeBtn.style.display='none';
     });

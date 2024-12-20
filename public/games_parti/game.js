@@ -101,6 +101,7 @@ window.onload = function() {
 
 const MortalKombat=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844752/ma2pzuojuj6nor5xn5eq.jpg",
 "https://res.cloudinary.com/duf3hruwc/image/upload/v1733855768/gm9mrnhelyk8as2dbpvh.jpg",
+"https://res.cloudinary.com/duf3hruwc/image/upload/v1734720758/WhatsApp_Image_2024-12-09_at_17.11.10_59d08aaf_ukapfg.jpg"
 ]
 
 const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fygb6uu8njtq9b13uxwx.jpg",
@@ -135,8 +136,8 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
     let fifaText=["Glitchpop 3.0","T vs M","Glitchpop 3.0","Glitchpop","Glitchpop"]
     let Mine=["Cubewars","Cubewars","Cubewars","Cubewars","Cubewars"]
     let rocket=["Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0","Octane 1.0"]
-    let tekken=["T VS M","IronWill","IronWill","IronWill","IronWill"]
-    let bgmiText=["LAN","LAN","LAN","Freshers Cup","",""]
+    let tekken=["T VS M","T VS M","IronWill","T VS M","T VS M"]
+    let bgmiText=["UnderDogs","UnderDogs","UnderDogs","Freshers Cup","Freshers Cup","Freshers Cup"]
     let CRtext=["Glitchpop","Glitchpop","Glitchpop"]
     // Check the game and set the respective images
     if (game === 'Valorant') {
