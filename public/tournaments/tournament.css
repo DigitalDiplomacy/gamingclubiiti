@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@421&family=Press+Start+2P&display=swap');
 :root {
     --primary-color: #00ffff;
     --secondary-color: #ff00ff;
@@ -10,12 +7,10 @@
     width: 12px;
     z-index: 997;
 }
-
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, #0787a7);
     border-radius: 6px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, #00c6ff);
 }
@@ -25,7 +20,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: black;
@@ -103,8 +97,6 @@ header .logo {
 .name img:hover{
     transform: scale(2.05); 
 }
-
-/* Tournament Details Section */
 .tournament-details {
     padding: 6.9rem 0;
     background-color: black;
@@ -177,11 +169,9 @@ header .logo {
     cursor: pointer;
     position: relative;
 }
-
 .box:hover .card-inner {
     transform: rotateY(180deg);
 }
-
 .card-front, .card-back {
     width: 100%;
     height: 100%;
@@ -191,20 +181,17 @@ header .logo {
     overflow: hidden;
     z-index: 1;
 }
-
 .card-front {
     background-color: #1a1a2e;
     display: flex;
     flex-direction: column;
 }
-
 .card-front img {
     object-fit: fill; 
     width: 100%; 
-    height: 100%; /* Ensures the image takes up the full height */
+    height: 100%;
     transition: 0.3s ease; 
 }
-
 .card-front h3 {
     flex-grow: 1;
     display: flex;
@@ -216,7 +203,6 @@ header .logo {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 .card-back {
     background-color: #16213e;
     color: #ddf8ff;
@@ -227,20 +213,17 @@ header .logo {
     padding: 2rem;
     text-align: center;
 }
-
 .card-back h3 {
     font-size: 1.8rem;
     color: #00ffff;
     margin-bottom: 1rem;
 }
-
 .card-back p {
     flex-grow: 1;
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
 }
-
 .learn-more {
     padding: 0.75rem 1.5rem;
     background-color: #00ffff;
@@ -258,14 +241,12 @@ header .logo {
     transform: scale(1.04);
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
 }
-
 .section-title.neon {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 2rem;
     color: #00ffff;
 }
-
 footer {
     width: 100%;
     background-color: #1a1a1a;
@@ -275,7 +256,6 @@ footer {
     font-size: 16px;
     line-height: 1.5;
 }
-
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -284,34 +264,28 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .footer-section {
     flex: 1;
     padding: 0 20px;
     min-width: 300px;
     margin-bottom: 40px;
 }
-
 .footer-section h2 {
     color: #00ffff;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
-
 .about .logo-text {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
-
 .about p {
     margin-bottom: 20px;
 }
-
 .about .contact span {
     display: block;
     margin-bottom: 10px;
 }
-
 .socials a {
     display: inline-block;
     width: 40px;
@@ -324,22 +298,18 @@ footer {
     margin-right: 10px;
     transition: all 0.3s ease;
 }
-
 .socials a:hover {
     background: #00ffff;
     color: #1a1a1a;
     transform: translateY(-5px);
 }
-
 .links ul {
     list-style: none;
     padding: 0;
 }
-
 .links ul li {
     margin-bottom: 15px;
 }
-
 .links ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -350,7 +320,6 @@ footer {
     color: #00ffff;
     padding-left: 10px;
 }
-
 .contact-form .contact-input {
     background: #333;
     color: #ffffff;
@@ -359,11 +328,9 @@ footer {
     padding: 10px;
     width: 100%;
 }
-
 .contact-form .contact-input::placeholder {
     color: #999;
 }
-
 .contact-form .contact-btn {
     background: #00ffff;
     color: #1a1a1a;
@@ -383,7 +350,6 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
-
 .menu-toggle {
     display: none;
     position: absolute;
@@ -392,9 +358,8 @@ footer {
     cursor: pointer;
     font-size: 1.369rem;
     color: var(--primary-color);
-    z-index: 998; /* Ensure it's above other elements */
+    z-index: 998;
 }
-
 .side-navbar {
     position: fixed;
     top: 0;
@@ -408,7 +373,6 @@ footer {
     flex-direction: column;
     padding-top: 69px;
 }
-
 .side-navbar a {
     color: cyan;
     text-decoration: none;
@@ -416,11 +380,9 @@ footer {
     font-size: 1.169rem;
     transition: 0.3s;
 }
-
 .side-navbar a:hover {
     background-color: rgba(0, 255, 255, 0.1);
 }
-
 .close-btn {
     position: absolute;
     top: 1.269em;
@@ -429,7 +391,6 @@ footer {
     color: #fff;
     cursor: pointer;
 }
-
 @media screen and (max-width: 1024px) {
     header {
         padding: 0.4em 0.8em;
@@ -478,7 +439,6 @@ footer {
     .side-navbar.active {
         right: 0;
     }
-    /* Hide menu toggle when sidebar is active */
     .side-navbar.active + .menu-toggle {
         display: none;
     }
@@ -524,7 +484,6 @@ footer {
         display: none;
     }
 }
-/*footer */
 @media only screen and (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -544,19 +503,16 @@ footer {
     .about .logo-text {
         font-size: 1.669rem;
     }
-
     .socials a {
         width: 30.69px;
         height: 30.69px;
         line-height: 330.69px;
     }
-
     .contact-form {
         display: none;
     }
 }
 
-/* Media query for mobile devices (max-width: 480px) */
 @media only screen and (max-width: 480px) {
     .footer-content {
         padding: 0 9px;
@@ -569,18 +525,15 @@ footer {
     .about .logo-text {
         font-size: 1.569rem;
     }
-
     .footer-section {
         padding: 0 9px;
         margin-bottom: 18.69px;
     }
-
     .socials a {
         width: 30px;
         height: 30px;
         line-height: 28px;
     }
-
     .footer-bottom {
         font-size: 0.769rem;
     }
@@ -591,7 +544,6 @@ footer {
         background-color: #000;
         padding: 18.69px 0;
     }
-
     .section-title .neon {
         color: #00ffff;
         font-size: 21.69px;
@@ -599,7 +551,6 @@ footer {
         margin-bottom: 29px;
         text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
     }
-
     .tournament-details .details-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -607,7 +558,6 @@ footer {
         justify-items: center;
         padding: 19px 0px;
     }
-
     .tournament-details .details-grid .detail-item {
         position: relative;
         width: 108.69px;
@@ -627,11 +577,9 @@ footer {
         color: #00ffff;
         z-index: 1;
     }
-
     .tournament-details .detail-item.active i {
         display: none;
     }
-
     .tournament-details .detail-item h4, 
     .tournament-details .detail-item p {
         position: absolute;
@@ -642,14 +590,12 @@ footer {
         margin: 0;
         transition: opacity 0.3s ease;
     }
-
     .tournament-details .detail-item h4 {
         top: 27%;
         transform: translateY(-50%);
         font-size: 12.269px;
         text-align: center;
     }
-
     .tournament-details .detail-item p {
         top: 63%;
         transform: translateY(-50%);
@@ -666,12 +612,11 @@ footer {
         .upcoming-events .box .card-inner {
             transform: none;
         }
-        /* Ensure the front (image) is visible initially */
         .tournament-grid .card-front {
             font-size: 0.8969px;
             z-index: 2;
-            opacity: 1; /* Image is visible initially */
-            backface-visibility: hidden; /* Ensure it doesn't flip */
+            opacity: 1; 
+            backface-visibility: hidden; 
             transition: opacity 0.3s ease-in-out;
         }
         .tournament-grid .card-back {
@@ -681,7 +626,6 @@ footer {
             transform: none; 
             transition: opacity 0.3s ease-in-out;
         }
-        
         .tournament-grid .card-front h3{
             font-weight:bolder;
             font-size: 0.869rem;
@@ -708,7 +652,6 @@ footer {
             color: #00ffff;
             margin-bottom: 0.8rem;
         }
-        
         .card-back p {
             flex-grow: 1;
             display: flex;
@@ -727,22 +670,17 @@ footer {
             display: inline-block;
         }
 }
-
-/* Additional adjustments for smaller screens */
 @media screen and (max-width: 480px) {
     .detail-item {
         width: 100px;
         height: 100px;
     }
-    
     .tournament-details .detail-item i {
         font-size: 28px;
     }
-
     .tournament-details.detail-item h4 {
         font-size: 12px;
     }
-
     .tournament-details .detail-item p {
         font-size: 10px;
     }

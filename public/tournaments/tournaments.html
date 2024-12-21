@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournaments - Gaming Club IITI</title>
     <link rel="icon" type="image/jpg" href="../about_page/files/gc_logo2-removebg.png">
-    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Your stylesheets -->
     <link rel="stylesheet" href="tournament.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@421&family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="hero.css">
-
-    <!-- Preloader -->
     <div class="preloader">
         <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734786982/fgugqmcmwa12kq6lk3iq.gif" alt="Loading..." class="loading-gif">
 </div>
@@ -29,7 +23,7 @@
             <a style="color: cyan;" href="../">Home</a>
             <a style="color: cyan;" href="./">Tournament</a>
             <a style="color: cyan;" href="../index.html#gallery-to">Gallery</a>
-            <a style="color: cyan;" href="../about_page">About Us</a>
+            <a style="color: cyan;" href="../about_page">About</a>
         </nav>
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
@@ -49,7 +43,7 @@
         <section class="banner">
             <div class="slider">
                 <div class="slide active">
-                    <img src="https://wallpaperaccess.com/full/9319236.png" alt="">
+                    <img src="https://wallpaperaccess.com/full/9319236.png" alt="Event Poster" fetchpriority="high">
                     <div class="left-info">
                         <div class="penetrte-blur">
                             <h1>Ava</h1>
@@ -67,14 +61,14 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="https://wallpaperaccess.com/full/1482932.jpg" alt="">
+                    <img src="https://wallpaperaccess.com/full/1482932.jpg" alt="Event Poster" fetchpriority="high">
                     <div class="left-info">
                         <div class="penetrte-blur">
                             <h1>BG</h1>
                         </div>
                         <div class="content">
                             <h3>Underdogs</h3>
-                            <p>Battlegrounds Mobile India is a battle royale game, in which up to 100 players compete in
+                            <p>BGMI is a battle royale game, in which up to 100 players compete in
                                 a large-scale last man standing deathmatch. Each match starts with players parachuting from a
                                 plane onto one of the several maps.</p>
                             <a href="#" class="btn">Event Over</a>
@@ -86,7 +80,7 @@
                 </div>
 
                 <div class="slide">
-                    <img src="https://wallpaperaccess.com/full/5525905.jpg" alt="">
+                    <img src="https://wallpaperaccess.com/full/5525905.jpg" alt="" >
                     <div class="left-info">
                         <div class="penetrte-blur">
                             <h1>Clash</h1>
@@ -103,7 +97,6 @@
                         <h1>Royale</h1>
                     </div>
                 </div>
-
                 <div class="slide">
                     <img src="https://wallpaperaccess.com/full/3669524.jpg" alt="">
                     <div class="left-info">
@@ -155,7 +148,6 @@
                 </div>
             </div>
         </section>
-
         <section class="previous-tournaments"  data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title neon">Previous Tournaments</h2>
@@ -174,7 +166,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="box">
                         <div class="card-inner">
                             <div class="card-front">
@@ -204,7 +195,6 @@
                 </div>
             </div>
         </section>
-
         <section class="upcoming-events"  data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title neon">Upcoming Tournaments</h2>
@@ -257,7 +247,6 @@
 <br>
 <br>
     </main>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -300,16 +289,15 @@
             &copy; 2024 Gaming Club IITI
         </div>
     </footer>
-
     <script src="script.js"></script>
 
     <script src="tournament.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
-        duration: 1000,  // Animation duration
-        once: true,      // Whether animation should happen only once
-        easing: 'ease-in-out', // Easing function
+        duration: 1000,  
+        once: true,      
+        easing: 'ease-in-out', 
     });
     document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
@@ -332,16 +320,12 @@
             closeSidebar();
         }
     });
-    // Handle window resize
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             closeSidebar();
         }
-    });
-    
+    }); 
 });
 </script>
-
 </body>
-
 </html>

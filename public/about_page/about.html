@@ -7,10 +7,10 @@
     <link rel="icon" type="image/jpg" href="files/gc_logo2-removebg.png">
     <link rel="stylesheet" href="ABJ_ABOUT_STYLE.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@421&family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
     <div class="preloader">
         <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734786982/fgugqmcmwa12kq6lk3iq.gif" alt="Loading..." class="loading-gif">
-    </div>
+</div>
 </head>
 <header>
     <div class="name"> <a href="../" class="logo"><img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1730036989/gc_logo2-removebg_uqbf76.png"> Gaming Club IITI</a></div>
@@ -33,34 +33,20 @@
     </ul>
 </div>
 <body>
-
 <section class="kuch">
     <div class="hero-container">
         <div class="herocard-container">
             <div class="herocard" style="background-image: url('https://res.cloudinary.com/dq2skbvkx/image/upload/v1734211712/tsviph8atewmzqjyzrvc_issnun.jpg')">
-                <div class="herocard-content">
-
-                </div>
             </div>
             <div class="herocard" style="background-image: url('https://res.cloudinary.com/dq2skbvkx/image/upload/v1734211711/IMG20230310130447_amr2yc_gzqaii.jpg')">
-                <div class="herocard-content">
-
-                </div>
             </div>
-            <div class="herocard" style="background-image: url('https://res.cloudinary.com/dq2skbvkx/image/upload/v1734211710/DSC00376_pnd6zy_jqxozc.jpg')">
-                <div class="herocard-content">
-
-                </div>
+            <div class="herocard" style="background-image: url('https://res.cloudinary.com/dq2skbvkx/image/upload/v1734211710/DSC00376_pnd6zy_jqxozc.jpg')"> 
             </div>
             <div class="herocard" style="background-image: url('https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828273/IMG_2244_nb22nj.jpg')">
-                <div class="herocard-content">
-
-                </div>
             </div>
         </div>
     </div>
 </section>
-    
 <main>
     <section class="about-content">
         <div class="section" data-aos="fade-up">
@@ -69,7 +55,7 @@
                 <p>
                     Our mission is to unite gamers from all backgrounds, creating a vibrant community where passion for games and the spirit of friendship come together.
                     Whether you're into competitive eSports, casual multiplayer sessions, or the art of game design, we have a place for you. 
-                     Join us, and let's make unforgettable memories, one game at a time!</p>
+                     Join us, and let's make unforgettable memories!</p>
                 <a href="#" class="cta-button">Join the Quest</a>
             </div>
             <div class="game-icons">🎮</div>
@@ -77,7 +63,6 @@
             <div class="game-icons">🕹️</div>
             <div class="game-icons">🎲</div>
             <div class="game-icons">🎳</div>
-            <div class="game-icons">🏓</div>
             <div class="glitch-effect"></div>
         </div>
         <div class="section" data-aos="fade-up">
@@ -93,7 +78,6 @@
             <div class="game-icons">💻</div>
             <div class="game-icons">🌐</div>
             <div class="game-icons">📱</div>
-            <div class="game-icons">🎧</div>
             <div class="glitch-effect"></div>
         </div>
     </section>
@@ -372,12 +356,10 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     document.head.appendChild(style);
 });
-
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    const minimumLoadingTime = 3700; // 2 seconds minimum display time
+    const minimumLoadingTime = 2000; // 2 seconds minimum display time
     const startTime = Date.now();
-
     window.addEventListener('load', function() {
         const elapsedTime = Date.now() - startTime;
         const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
@@ -388,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 preloader.style.display = 'none';
             }, 500); // Wait for fade animation to complete
         }, remainingTime);
-    });
+});
 });
         const header = document.querySelector('header');
         document.addEventListener('DOMContentLoaded', () => {
@@ -431,16 +413,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroContainer = document.querySelector('.herocard-container');
     const heroCards = Array.from(heroContainer.querySelectorAll('.herocard'));
     let currentIndex = 0;
-
     function showCard(index) {
         heroCards.forEach((card, i) => {
             card.style.display = i === index ? 'block' : 'none';
         });
     }
-
     function adjustHeroCards() {
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
         if (isMobile) {
             showCard(currentIndex);
             createSliderControls();
@@ -449,10 +428,8 @@ document.addEventListener('DOMContentLoaded', function() {
             removeSliderControls();
         }
     }
-
     function createSliderControls() {
         if (document.querySelector('.slider-controls')) return;
-
         const prevButton = document.createElement('button');
         prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
         prevButton.className = 'slider-btn prev-btn';
@@ -460,7 +437,6 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : heroCards.length - 1;
             showCard(currentIndex);
         };
-
         const nextButton = document.createElement('button');
         nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
         nextButton.className = 'slider-btn next-btn';
@@ -483,27 +459,19 @@ document.addEventListener('DOMContentLoaded', function() {
     adjustHeroCards();
     window.addEventListener('resize', adjustHeroCards);
 });
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
     const sideNavbar = document.querySelector('.side-navbar');
     const closeBtn = document.querySelector('.close-btn');
-
     mobileMenuIcon.addEventListener('click', function() {
         sideNavbar.classList.add('active');
         mobileMenuIcon.style.display='none';
     });
-
     closeBtn.addEventListener('click', function() {
         sideNavbar.classList.remove('active');
         closeBtn.style.display='none';
-    });
-    
+    });  
 });
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const logoElement = document.querySelector('.name .logo');
     if (window.innerWidth <= 768) { 

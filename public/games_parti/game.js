@@ -1,9 +1,8 @@
 //loader
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    const minimumLoadingTime = 3700; // 2 seconds minimum display time
+    const minimumLoadingTime = 3000; // 2 seconds minimum display time
     const startTime = Date.now();
-
     window.addEventListener('load', function() {
         const elapsedTime = Date.now() - startTime;
         const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 preloader.style.display = 'none';
             }, 500); // Wait for fade animation to complete
         }, remainingTime);
-    });
+});
 });
 document.addEventListener('DOMContentLoaded', function() {
     let next = document.querySelector('.next');
@@ -51,16 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
         stopAutoSlide();
         startAutoSlide();
     });
-
-    // Start auto-sliding
     startAutoSlide();
 });
 //To load different set of images 
 window.onload = function() {
-    // Get the value of the 'game' parameter from the URL
     const { game } = Qs.parse(location.search, { ignoreQueryPrefix: true });
-
-    // Define the background images for Valorant and BGMI
     const valorantImages = [
         "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828214/IMG20230310140627_hahwzr.jpg",
         "https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722838/DSC00332_1_kho9eh_qr24it.jpg",
@@ -74,11 +68,8 @@ window.onload = function() {
         "https://res.cloudinary.com/duf3hruwc/image/upload/v1733854229/j3hjx9jln76n6tw07dqf.jpg",
         "https://res.cloudinary.com/duf3hruwc/image/upload/v1733853245/jpq1qwiy0ytgyobszkdc.jpg",
         "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733930499/b70cvd0i8orkzmtfajxp.jpg",
-        "https://wallpaperaccess.com/thumb/9905503.jpg",
-        
+        "https://wallpaperaccess.com/thumb/9905503.jpg",  
     ];
-
-
     const Fifa=["https://res.cloudinary.com/dq2skbvkx/image/upload/v1734722916/fifa_1_ybnbjr.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733844753/ropcu3koznwoiqrjoxq4.jpg",
     "https://res.cloudinary.com/dq2skbvkx/image/upload/v1733828217/DSC06719_hr5tlg.jpg"
@@ -105,20 +96,17 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
 "https://res.cloudinary.com/duf3hruwc/image/upload/v1733854723/bwvztdnngjelc2w7j3g2.jpg",
 "https://res.cloudinary.com/duf3hruwc/image/upload/v1733854723/eqohcrr3kar4bgvidhsg.jpg"]
 
-    // Select all slide items
     const slideItems = document.querySelectorAll('.slide .item');
     const slideText = document.querySelectorAll('.slide .item .content');
 
     // Function to set background images based on the game
     function setBackgroundImages(images) {
         slideItems.forEach((item, index) => {
-            // Set the background image for each slide
             if (images[index]) {
                 item.style.backgroundImage = `url(${images[index]})`;
             }
         });
     }
-    // Function to set background images based on the game
     function setText(text) {
         slideText.forEach((item, index) => {
 
@@ -137,8 +125,8 @@ const Rocket=["https://res.cloudinary.com/duf3hruwc/image/upload/v1733849275/fyg
     if (game === 'Valorant') {
         setBackgroundImages(valorantImages);
         setText(valoText);
-
-    } else if (game === 'BGMI') {
+    }
+    else if (game === 'BGMI') {
         setBackgroundImages(bgmiImages);
         setText(bgmiText);
     }

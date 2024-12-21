@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
     <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.13.0/qs.min.js" integrity="sha512-LGi3LadLxI4NfDCsvTQ+Ps8dmV3PK7QUNFMEPyqpfFI78fu9YUXPRRVHIOH9xS5OLz035SSTH2Mc2Tzau+l7BA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -11,26 +10,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@421&family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IR00HhonpyAIVpjry]PvoDwiPUiKdWk5t3Pyo]Y1c0d4DSE®Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div class="preloader">
-        <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734786982/fgugqmcmwa12kq6lk3iq.gif" alt="Loading..." class="loading-gif">
-    </div>
+        <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734786982/fgugqmcmwa12kq6lk3iq.gif" alt="Loading..." class="loading-gif"></div>
 </head>
-
 <body>
     <header>
         <div class="name"><img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1730036989/gc_logo2-removebg_uqbf76.png"> <a href="../" class="logo"> GAMING CLUB</a></div>
         <div class="mobile-menu-icon">☰</div>  <!-- Add this line -->
         <ul>
             <li><a href="../">Home</a></li>
-            <li><a href="../tournaments">Tournaments</a></li>
-            
+            <li><a href="../tournaments">Tournaments</a></li>   
             <li><a href="#gallery-to">Gallery</a></li>
             <li><a href="../about_page">About</a></li>
         </ul>
     </header>
-
     <div class="side-navbar">
         <span class="close-btn">&times;</span>
         <ul>
@@ -41,10 +36,9 @@
             <li><a href="https://www.instagram.com/gamingclubiiti">Contact Us</a></li>
         </ul>
     </div>
-
     <section class="top">
         <video autoplay loop muted plays-inline class="back">
-            <source src="./about_page/files/Montage 1 2.mp4" type="video/mp4">
+            <source src="./about_page/files/Montage 1 2.mp4" type="video/mp4" fetchpriority="high">
         </video>
     </section>
      <section class="trans">
@@ -54,9 +48,8 @@
         Whether you are looking to dive into casual play or take on the fiercest competitors, we offer a welcoming environment for every level of gamer. Join us to participate in thrilling tournaments, explore new game releases, and build lasting friendships.
         From strategy games to eSports competitions, we have something for everyone.</p>
     </div>  
-        <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734723078/valo1_1_hczqrv.jpg" alt="Gaming Club">
+        <img src="https://res.cloudinary.com/dq2skbvkx/image/upload/v1734723078/valo1_1_hczqrv.jpg" alt="Gaming Club" fetchpriority="high">
     </section>
-
     <section class="cards" id="gallery-to">
         <div class="Heading-cards">
             <h1>EVENT GALLERY</h1>
@@ -171,7 +164,6 @@
     </div>
     <hr class="partners-hr bottom">
 </section>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -189,7 +181,6 @@
                     <a href="https://www.discord.gg/JmvDXyxT"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
-
             <div class="footer-section links">
                 <h2>Quick Links</h2>
                 <ul>
@@ -198,8 +189,6 @@
                     <li><a href="../about_page"><i class="fas fa-users"></i> About Us</a></li>
                 </ul>
             </div>
-
-            <!-- Contact form (visible by default on desktop) -->
             <div class="footer-section contact-form" id="contactForm">
                 <h2>Contact Us</h2>
                 <form action="../queries" method="post">
@@ -210,9 +199,7 @@
                     </button>
                 </form>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             &copy; 2024 Gaming Club IITI
         </div>
@@ -221,9 +208,8 @@
         //loader
     document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    const minimumLoadingTime = 3700; // 2 seconds minimum display time
+    const minimumLoadingTime = 2000; // 2 seconds minimum display time
     const startTime = Date.now();
-
     window.addEventListener('load', function() {
         const elapsedTime = Date.now() - startTime;
         const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
@@ -234,7 +220,7 @@
                 preloader.style.display = 'none';
             }, 500); // Wait for fade animation to complete
         }, remainingTime);
-    });
+});
 });
 document.addEventListener('DOMContentLoaded', function () {
     const cardSets = document.querySelectorAll('.flex'); // Select the card sets (containers)

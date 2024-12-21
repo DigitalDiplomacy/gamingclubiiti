@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Preloader
-    
-
-    // Header scroll effect
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
@@ -12,13 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Intersection Observer setup for animations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
         threshold: 0.1
     };
-
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -32,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Function to add animation classes and observe elements
     function setupAnimations(elements, keepObserving = false) {
         elements.forEach(el => {
             if (el) {
@@ -42,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Setup animations for various sections
     const sectionsToAnimate = [
         '.main-txt', '.events-txt', '.wrapper', '.trans', '.cards', '.partners-section'
     ];
@@ -52,23 +43,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const section = document.querySelector(selector);
         if (section) {
             if (selector === '.trans') {
-                // Special handling for trans section
                 const content = section.querySelector('.gaming-club-content');
                 const image = section.querySelector('img');
                 if (content) setupAnimations([content]);
                 if (image) setupAnimations([image]);
             } else if (selector === '.partners-section') {
-                // Special handling for partners section
+
                 const content = section.querySelector('.partners-content');
                 if (content) setupAnimations([content]);
             } else {
-                // For other sections, animate all direct children
                 setupAnimations(Array.from(section.children));
             }
         }
     });
 
-    // Neon text animation
     const neonElements = document.querySelectorAll('.neon, .neon-text');
     neonElements.forEach(el => {
         const letters = el.textContent.split('');
@@ -78,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setupAnimations([el], true);
     });
 
-    // Card hover effect
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
@@ -91,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -101,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Partner logos animation
     const partnerLogos = document.querySelectorAll('.partner-logo');
     setupAnimations(partnerLogos, true);
 
@@ -116,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add necessary styles dynamically
     const style = document.createElement('style');
     style.textContent = `
         .animate-on-scroll {
@@ -150,12 +134,9 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Initialize neon letter animations
     neonElements.forEach(el => {
         el.querySelectorAll('.neon-letter').forEach((letter, index) => {
             letter.style.setProperty('--char-index', index);
         });
     });
 });
-
-

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@421&family=Press+Start+2P&display=swap');
-
 :root {
     --primary-color: #00ffff;
     --secondary-color: #ff00ff;
@@ -12,7 +10,6 @@
     --hover-brightness: 1.1;
     --dim-brightness: 0.3;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +39,6 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -56,7 +52,6 @@ header {
     padding: 18px 100px;
     z-index: 9998;
 }
-
 header.sticky {
     padding: 20px 100px;
     background-color: rgba(17, 17, 17, 0.8);
@@ -195,23 +190,6 @@ header .logo:hover {
 .herocard:hover::after {
     opacity: 1;
 }
-
-.herocard-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    color:rgb(197, 197, 197);
-    transform: translateY(100%);
-    transition: transform var(--transition-speed) ease;
-    z-index: 1;
-}
-
-.herocard:hover .herocard-content {
-    transform: translateY(0);
-}
-
 main {
     margin: 7px;
     padding: 37px 6%;
@@ -220,13 +198,10 @@ main {
     width: 12px;
     z-index: 997;
 }
-
-::-webkit-scrollbar-thumb {
-   
+::-webkit-scrollbar-thumb {  
     background: linear-gradient(transparent,  #026464);
     border-radius: 6px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, #00c6ff);
 }
@@ -235,7 +210,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 .section {
     width: 100%;
     display: flex;
@@ -245,7 +219,6 @@ main {
     overflow: hidden;
     transition: all 0.5s ease;
 }
-
 .section::before {
     content: '';
     position: absolute;
@@ -257,12 +230,10 @@ main {
     opacity: 0.1;
     animation: pulse 8s ease-in-out infinite alternate;
 }
-
 @keyframes pulse {
     0% { opacity: 0.05; }
     100% { opacity: 0.15; }
 }
-
 .content-wrapper {
     width: 70%;
     background: rgba(10, 10, 10, 0.8);
@@ -273,12 +244,10 @@ main {
     padding: 2.4rem;
     position: relative;
 }
-
 .content-wrapper:hover {
     box-shadow: 0 0 40px rgba(255, 0, 255, 0.3);
     transform: translateY(-5px);
 }
-
 h2 {
     font-size: 2.2em;
     color: var(--secondary-color);
@@ -288,7 +257,6 @@ h2 {
     position: relative;
     display: inline-block;
 }
-
 h2::after {
     content: '';
     position: absolute;
@@ -299,17 +267,14 @@ h2::after {
     background-color: var(--primary-color);
     transition: width 0.3s ease;
 }
-
 .content-wrapper:hover h2::after {
     width: 100%;
 }
-
 p {
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
-
 .cta-button {
     display: inline-block;
     padding: 0.8em 1.5em;
@@ -323,13 +288,11 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .cta-button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
 }
-
 .game-icons {
     position: absolute;
     font-size: 2em;
@@ -337,7 +300,6 @@ p {
     transition: all 0.5s ease;
     pointer-events: none;
 }
-
 .game-icons:nth-child(1) { top: 10%; left: 5%; }
 .game-icons:nth-child(2) { top: 20%; right: 10%; }
 .game-icons:nth-child(3) { bottom: 15%; left: 15%; }
@@ -345,16 +307,13 @@ p {
 .game-icons:nth-child(5) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .game-icons:nth-child(6) { top: 30%; left: 30%; }
 .game-icons:nth-child(7) { bottom: 40%; right: 20%; }
-
 .section:hover .game-icons {
     opacity: 0.6;
     transform: scale(1.2) rotate(10deg);
 }
-
 .section:hover .game-icons:nth-child(5) {
     transform: translate(-50%, -50%) scale(1.5) rotate(-10deg);
 }
-
 .glitch-effect {
     position: absolute;
     top: 0;
@@ -373,26 +332,21 @@ p {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
-
 .section:hover .glitch-effect {
     opacity: 1;
 }
-
 @keyframes glitch {
     0% { background-position: 0 0; }
     100% { background-position: 0 100%; }
 }
-
-
 .team-head{
-    padding-top: 10px;
+    padding-top: 69.69px;
     padding-bottom: 20px;
     padding-left: 33%;
     text-align: center;
-    font-size: 6em;
-    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    font-family: "Audiowide", sans-serif;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -400,7 +354,6 @@ p {
     max-width: 1200px;
     margin: auto;
 }
-
 .namecard {
     width: 220px;
     height: 320px;
@@ -414,7 +367,6 @@ p {
     position: relative;
     clip-path: polygon(0 calc(40px),calc(40px) 0, 100% 0, 100% calc(100% - 40px), calc(100% - 30px) 100%, 0 100%);
 }
-
 .namecard:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -469,7 +421,6 @@ text-align: center;
     font-size: 16px;
     color: #555;
 }
-
 .social-links {
     position: absolute;
     bottom: 0;
@@ -483,15 +434,12 @@ text-align: center;
     transition: transform 0.9s ease;
     z-index: 3;
 }
-
 .namecard:hover .social-links {
     transform: translateY(0);
 }
-
 .namecard:hover .info {
     transform: translateY(-61%);
 }
-
 .social-links a {
     color:  #ff00ff;
     text-decoration: none;
@@ -503,8 +451,6 @@ text-align: center;
 .social-links a:hover {
     filter: brightness(1.0);
 }
-
-
 footer {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -513,7 +459,6 @@ footer {
     font-size: 16px;
     line-height: 1.5;
 }
-
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -522,34 +467,28 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .footer-section {
     flex: 1;
     padding: 0 20px;
     min-width: 300px;
     margin-bottom: 40px;
 }
-
 .footer-section h2 {
     color: #00ffff;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
-
 .about .logo-text {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
-
 .about p {
     margin-bottom: 20px;
 }
-
 .about .contact span {
     display: block;
     margin-bottom: 10px;
 }
-
 .socials a {
     display: inline-block;
     width: 40px;
@@ -562,33 +501,27 @@ footer {
     margin-right: 9px;
     transition: all 0.3s ease;
 }
-
 .socials a:hover {
     background: #00ffff;
     color: #1a1a1a;
     transform: translateY(-5px);
 }
-
 .links ul {
     list-style: none;
     padding: 0;
 }
-
 .links ul li {
     margin-bottom: 13.8px;
 }
-
 .links ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
 .links ul li a:hover {
     color: #00ffff;
     padding-left: 9px;
 }
-
 .contact-form .contact-input {
     background: #333;
     color: #ffffff;
@@ -597,11 +530,9 @@ footer {
     padding: 9px;
     width: 100%;
 }
-
 .contact-form .contact-input::placeholder {
     color: #999;
 }
-
 .contact-form .contact-btn {
     background: #00ffff;
     color: #1a1a1a;
@@ -610,27 +541,22 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .contact-form .contact-btn:hover {
     background: #ffffff;
 }
-
 .footer-bottom {
     background: #111;
     padding: 13px 0;
     text-align: center;
     font-size: 0.9rem;
 }
-
 .footer-bottom a {
     color: #00ffff;
     text-decoration: none;
 }
-
 .side-navbar {
     display: none;
 }
-
 /* Container positioning to relative */
 .herocard-container {
     position: relative;
@@ -641,7 +567,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color:transparent; /* Semi-transparent blue */
+    background-color:transparent; 
     color: white;
     border: none;
     border-radius: 50%;
@@ -658,17 +584,13 @@ footer {
 .mobile-menu-icon {
     display: none;
 }
-/* Left button */
 .prev-btn {
-    left: 10px; /* Position left */
+    left: 10px; 
 }
-
-/* Right button */
 .next-btn {
-    right: 10px; /* Position right */
+    right: 10px;
 }
 
-/* Hover effect for buttons */
 .slider-btn:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -689,22 +611,18 @@ footer {
     }
 }
 @media screen and (max-width: 768px) {
-    /* General adjustments */
     body {
         padding-top: 60px;
         font-size: 14px;
     }
-    /* Header adjustments */
     header {
         padding: 0.969em 10px;
         height: 65.69px;
     }
-
     .logo {
         padding-bottom: 2.969% ;
         font-size: 1px;
     }
-
     .logo img{
         height: 36px;    
     }
@@ -716,11 +634,9 @@ footer {
     header .logo {
         font-size: 1.44em;
     }
-
     header ul {
-        display: none; /* Hide the navigation menu on mobile */
+        display: none; 
     }
-
     .mobile-menu-icon {
         display: block;
         position: absolute;
@@ -730,7 +646,6 @@ footer {
         font-size: 17.69px;
         color: var(--primary-color);
     }
-
     .side-navbar {
         display: block;
         position: fixed;
@@ -742,33 +657,27 @@ footer {
         z-index: 999;
         transition: 0.3s;
         overflow-y: auto;
-         /* Important - ensure it doesn't block pointer events */
         pointer-events: auto;
     } 
-    
     .side-navbar ul {
         font: 1em sans-serif;
         color: #00ffff;
         padding: 50px 0;
         list-style: none;
     }
-    
     .side-navbar ul li {
         padding: 15px 30px;
     }
-    
     .side-navbar ul li a {
         color: var(--primary-color);
         text-decoration: none;
         font-size: 18px;
         transition: 0.3s;
     }
-    
     .side-navbar ul li a:hover {
         color: var(--secondary-color);
     }
     
-    /* Close button for side navbar */
    .side-navbar .close-btn {
         position: absolute;
         top: 20px;
@@ -786,7 +695,6 @@ footer {
         justify-content: center;
     }
     
-    /* Hero section adjustments */
     .hero-container {
         height: calc(48.69vh - 60px);
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
@@ -794,14 +702,12 @@ footer {
         padding-bottom: 5px;
         margin-top: -1.69%;
     }
-
    
     .herocard{
         margin-bottom: 2px;
         padding-bottom: 20px;
     }
    
-    /* Main content adjustments */
     main {
         padding: 2% 3%;
     }
@@ -886,7 +792,6 @@ footer {
         width: 100%;
         padding: 1rem;
     }
-
     .team-head {
         font-size: 2.5em;
     }
@@ -919,17 +824,14 @@ footer {
         margin: 0 5px;
         font-size: 1.269rem; 
     }
-
     .contact span {
         display: block;
         margin-bottom: 5px;
     }
-
     .footer-bottom {
         font-size: 0.8rem;
         padding: 8px 0;
     }
-
     .footer-content .links ul {
         padding: 0;
     }
@@ -938,7 +840,6 @@ footer {
         margin-bottom: 8px;
     }
 
-    /* Hide the contact form on screens smaller than 768px */
     .footer-section.contact-form {
         display: none;
     }
@@ -951,14 +852,12 @@ footer {
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
     .container .photo {
         height: 167px;
         width: 100%;
         object-fit: cover;
         transition: transform 0.3s ease;
     }
-
     .namecard .info {
         padding: 8px;
         background: rgb(0, 0, 0); 
@@ -968,7 +867,6 @@ footer {
         transform: translateY(0);
         transition: transform 0.15s ease;
     }
-
     .name {
         font-size: 14px;
         font-weight: bold;
@@ -976,14 +874,12 @@ footer {
         margin-bottom: 4px;
         font-family: 'Arial', sans-serif;  
     }
-
     .position {
         font-size: 12.5px;
         font-weight: bold;
         color: cyan; 
         margin-bottom: 8px;
     }
-
     .social-links {
         display: flex;
         gap: 12px;
@@ -1001,7 +897,6 @@ footer {
         color: #00ffff; 
     }
 
-    /* Hover effects */
     .namecard:hover .photo {
         transform: scale(0.969); 
     }
@@ -1012,25 +907,20 @@ footer {
     }
 }
 
-/* Additional adjustments for very small screens */
 @media screen and (max-width: 480px) {
     .namecard {
         width: 140px;
         height: 210px;
     }
-
     .container .photo {
         height: 155px;  
     }
-
     .name {
         font-size: 13.2px;
     }
-
     .position {
         font-size: 11.3px;
     }
-
     .social-links a {
         font-size: 12px;  
     }
