@@ -1,14 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        }, 1000);
-    }
+    
 
     // Header scroll effect
     const header = document.querySelector('header');

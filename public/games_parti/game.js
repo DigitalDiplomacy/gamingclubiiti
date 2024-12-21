@@ -1,13 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-       
-    // Hide the preloader
-    function hidePreloader() {
-        const preloader = document.getElementById("preloader");
-        preloader.style.display = "none";
-    }
+//loader
+document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.querySelector('.preloader');
+    const minimumLoadingTime = 3700; // 2 seconds minimum display time
+    const startTime = Date.now();
 
-    // Add a slight delay to simulate loading time if needed
-    setTimeout(hidePreloader, 1000); // 2000ms = 2 seconds
+    window.addEventListener('load', function() {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
+
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500); // Wait for fade animation to complete
+        }, remainingTime);
+    });
 });
 document.addEventListener('DOMContentLoaded', function() {
     let next = document.querySelector('.next');

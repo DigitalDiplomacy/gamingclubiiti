@@ -13,8 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IR00HhonpyAIVpjry]PvoDwiPUiKdWk5t3Pyo]Y1c0d4DSE®Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <div id="preloader" class="preloader">
-    <div class="loader"></div></div>
+    <div class="preloader">
+        <img src="../about_page/files/Loop-the-loop-bike-loader-in-CSS.gif" alt="Loading..." class="loading-gif">
+    </div>
 </head>
 
 <body>
@@ -217,6 +218,24 @@
         </div>
     </footer>
     <script>
+        //loader
+    document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.querySelector('.preloader');
+    const minimumLoadingTime = 3700; // 2 seconds minimum display time
+    const startTime = Date.now();
+
+    window.addEventListener('load', function() {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(minimumLoadingTime - elapsedTime, 0);
+
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500); // Wait for fade animation to complete
+        }, remainingTime);
+    });
+});
 document.addEventListener('DOMContentLoaded', function () {
     const cardSets = document.querySelectorAll('.flex'); // Select the card sets (containers)
     const prevBtn = document.getElementById('prevBtn');
@@ -275,16 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showSet(currentSet);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Hide the preloader
-    function hidePreloader() {
-        const preloader = document.getElementById("preloader");
-        preloader.style.display = "none";
-    }
 
-    // Add a slight delay to simulate loading time if needed
-    setTimeout(hidePreloader, 1000); // 2000ms = 2 seconds
-});
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
     const sideNavbar = document.querySelector('.side-navbar');
