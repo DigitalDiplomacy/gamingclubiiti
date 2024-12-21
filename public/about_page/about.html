@@ -463,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     function adjustHeroCards() {
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const isMobile = window.matchMedia('(max-width:1024px)').matches;
         if (isMobile) {
             showCard(currentIndex);
             createSliderControls();
@@ -506,7 +506,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const logoElement = document.querySelector('.name .logo');
-    if (window.innerWidth <= 768) { 
+    if (window.innerWidth <= 1024) { 
     if (logoElement) {
         // Get the text content of the logo element
         let text = logoElement.textContent;

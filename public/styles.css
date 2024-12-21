@@ -683,6 +683,7 @@ footer {
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     header {
         padding: 14px 0px;
+        font-size: 1.0em;
     }
 
     header.sticky {
@@ -694,7 +695,7 @@ footer {
     }
     .mobile-menu-icon {
         position: absolute;
-        top: 0.8rem;
+        top: 1rem;
         right: 0.6rem;
         cursor: pointer;
         font-size: 20px;
@@ -718,7 +719,7 @@ footer {
     }
    .card-container .card {
         width: 49.69%;
-        max-width: 19.69%;
+        max-width: 36.69%;
         height: 57.69%;
     }
     .card-container .card .content p{
@@ -737,7 +738,7 @@ footer {
         padding: 14px 0px;
     }
     header .logo{
-        font-size: 1.2em;
+        font-size: 1.269em;
     }
     header .name{
         gap: 5px;

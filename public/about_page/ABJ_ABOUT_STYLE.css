@@ -593,7 +593,7 @@ footer {
 .mobile-menu-icon {
     color: #00ffff;
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     z-index: 999;
 }
@@ -644,7 +644,76 @@ footer {
     padding: 10px;
     z-index: 1001;
 }
-
+@media screen and (max-width: 1024px) {
+    /* Header adjustments */
+    header {
+        font-size: 1.0em;
+        padding: 12px 48px;
+    }
+    header ul{
+        padding-top: 16px;;
+    }
+    header.sticky {
+        padding: 20px 50px;
+    }
+    
+    header .logo {
+        font-size: 1.6em;
+    }
+    
+    /* Main content adjustments */
+    .content-wrapper {
+        width: 85%;
+        padding: 1.8rem;
+    }
+    
+    /* Team section adjustments */
+    .team-head {
+        padding-left: 0;
+        font-size: 3.5em;
+    }
+    
+    /* Container adjustments */
+    .container {
+        max-width: 900px;
+    }
+    
+    /* Hero section adjustments */
+    .hero-container {
+        height: calc(90vh - 76px);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%);
+    }
+    
+    /* Name card adjustments */
+    .namecard {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .photo {
+        height: 15em;
+    }
+    
+    .name {
+        font-size: 1.1em;
+    }
+    
+    .position {
+        font-size: 14px;
+    }
+    
+    /* Navigation adjustments */
+    header ul li a {
+        margin: 0 10px;
+    }
+    
+    /* Slider button adjustments */
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     header ul {
@@ -654,27 +723,23 @@ footer {
     .mobile-menu-icon {
         display: block;
     }
-}
-/* Responsive width for smaller screens */
-@media (max-width: 768px) {
     .slider-btn {
         width: 40px;
         height: 40px;
         font-size: 18px;
     }
-}
-@media (max-width: 768px) {
     .footer-section.contact-form {
         display: none;
     }
 }
+
 @media screen and (max-width: 768px) {
     body {
         padding-top: 60px;
         font-size: 14px;
     }
     header {
-        padding: 0.969em 10px;
+        padding: 1em 10px;
         height: 65.69px;
     }
     .logo {
@@ -682,7 +747,7 @@ footer {
         font-size: 1px;
     }
     .logo img{
-        height: 36px;    
+        height: 34px;    
     }
 
     header.sticky {
@@ -736,7 +801,6 @@ footer {
         font-weight: bold;
     }
 
-    /* Team section adjustments */
     .team-head {
         font-size: 1.8em;
         padding-left: 1.4em;

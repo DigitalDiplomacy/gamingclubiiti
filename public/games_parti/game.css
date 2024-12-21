@@ -383,13 +383,46 @@ footer {
     color: var(--primary-color);
     cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+    body {
+        background-attachment: scroll; /* Better performance on tablets */
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    header .logo {
+        font-size: 1.6em;
+        letter-spacing: 1.5px;
+    }
+
+    header ul {
+        gap: 0.5rem;
+    }
+
+    header ul li a {
+        margin: 0 1rem;
+        letter-spacing: 1.5px;
+    }
+
+    header a {
+        margin-top: -2.5%;
+    }
+
+    .name {
+        align-items: center;
+    }
+}
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
 
     header {
-        padding: 20px 20px;
+        padding: 18px 18px;
     }
 
     header .logo {
@@ -401,7 +434,7 @@ footer {
     }
     .mobile-menu-icon {
         position: absolute;
-        top: 2.1rem;
+        top: 1.6rem;
         right: 1rem;
         cursor: pointer;
         font-size: 20px;
@@ -471,14 +504,14 @@ footer {
 @media screen and (max-width: 1200px) {
 
     header {
-        padding: 1.2rem 0rem;
+        padding: 1.169rem 0rem;
     }
     header .name{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .logo {
-        padding-bottom: 0.65rem;
-        margin-left: 3.0rem;
+        padding-bottom: 0.61rem;
+        margin-left: 2.0rem;
     }
 }
 
@@ -488,11 +521,14 @@ footer {
     }
 
     header {
-        padding: 1.169rem 0rem;
+        padding: 1.069rem 0rem;
     }
 
     header .logo {
-        font-size: 1.269em;
+        font-size: 1.0em;
+    }
+    .name .logo img{
+        height: 1.59em;
     }
     header ul {
         display: none;

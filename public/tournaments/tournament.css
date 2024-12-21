@@ -342,10 +342,10 @@ footer {
 .menu-toggle {
     display: none;
     position: absolute;
-    top: 1.569rem;
+    top: 1.52rem;
     right: 1.169rem;
     cursor: pointer;
-    font-size: 1.369rem;
+    font-size: 1.269rem;
     color: var(--primary-color);
     z-index: 998;
 }
@@ -365,8 +365,8 @@ footer {
 .side-navbar a {
     color: cyan;
     text-decoration: none;
-    padding: 15.69px 30.69px;
-    font-size: 1.169rem;
+    padding: 14.69px 29.69px;
+    font-size: 1.069rem;
     transition: 0.3s;
 }
 .side-navbar a:hover {
@@ -391,13 +391,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
     header {
-        padding: 0.4em 0.8em;
+        font-size: 1.0em;
+        padding: 0.42em 0.82em;
     }
     header.sticky {
-        padding: 0.4em 0.8em;
-    }
-    .navbar {
-        display: none;
+        padding: 0.42em 0.82em;
     }
 }
 
@@ -409,10 +407,10 @@ footer {
         display: none;
     }
     header {
-        padding: 0.4em 0.8em;
+        padding: 0.69em 0.8em;
     }
     header.sticky {
-        padding: 0.4em 0.8em;
+        padding: 0.69em 0.8em;
     }
     .navbar {
         display: none;
@@ -438,10 +436,10 @@ footer {
         right: 0;
     }
     header .logo {
-        font-size: 1.2em;
+        font-size: 1.369em;
     }
     .name img {
-        height: 1.4em;
+        height: 1.5em;
     }
     .tournament-details .section-title {
         font-size: 1.769rem;
