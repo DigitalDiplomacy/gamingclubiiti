@@ -78,7 +78,6 @@
                         <h1>MI</h1>
                     </div>
                 </div>
-
                 <div class="slide">
                     <img src="https://wallpaperaccess.com/full/5525905.jpg" alt="" >
                     <div class="left-info">
@@ -209,7 +208,6 @@
                                 <h3>Avalanche</h3>
                                 <p>Avalanche is an upcoming Valorant tournament scheduled in January.
                                 </p>
-                                
                             </div>
                         </div>
                     </div>
@@ -235,17 +233,11 @@
                             </div>
                             <div class="card-back">
                                 <h3>Minecraft Cup</h3>
-                                <p>Mine an extraordinary imagination and win the league.
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<br>
-<br>
+                                <p>Mine an extraordinary imagination and win the league.</p>
+                            </div></div>
+                    </div></div>
+            </div></section>
+<br><br>
     </main>
     <footer>
         <div class="footer-content">
@@ -299,7 +291,7 @@
         once: true,      
         easing: 'ease-in-out', 
     });
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const sideNavbar = document.querySelector('.side-navbar');
     const closeBtn = document.querySelector('.close-btn');
@@ -308,24 +300,43 @@
         sideNavbar.classList.add('active');
         menuToggle.style.display = 'none';
     }
+
     function closeSidebar() {
         sideNavbar.classList.remove('active');
-        menuToggle.style.display = 'block';
+        if (window.innerWidth <= 768) {
+            menuToggle.style.display = 'block'; // Only show toggle on smaller screens
+        }
     }
+
     menuToggle.addEventListener('click', openSidebar);
     closeBtn.addEventListener('click', closeSidebar);
+
     // Close side navbar when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!sideNavbar.contains(event.target) && !menuToggle.contains(event.target)) {
+    document.addEventListener('click', function (event) {
+        if (
+            window.innerWidth <= 768 && // Restrict behavior to smaller screens
+            !sideNavbar.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
             closeSidebar();
         }
     });
-    window.addEventListener('resize', function() {
+
+    // Adjust visibility on screen resize
+    function adjustMenuToggle() {
         if (window.innerWidth > 768) {
-            closeSidebar();
+            sideNavbar.classList.remove('active'); // Hide sidebar
+            menuToggle.style.display = 'none'; // Hide toggle icon
+        } else {
+            menuToggle.style.display = 'block'; // Show toggle icon on smaller screens
         }
-    }); 
+    }
+
+    window.addEventListener('resize', adjustMenuToggle);
+    adjustMenuToggle(); // Call on page load
 });
+
+
 </script>
 </body>
 </html>

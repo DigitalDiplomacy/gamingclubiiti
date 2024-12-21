@@ -41,8 +41,7 @@ body {
     align-items: center;
     z-index: 9999;
 }.loading-gif {
-    width: 49%;  /* Adjust size as needed */
-      /* Adjust size as needed */
+    width: 49%;  
 }
 
 header {
@@ -101,13 +100,11 @@ header .logo {
     padding: 6.9rem 0;
     background-color: black;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 22px;
 }
-
 .section-title {
     text-align: center;
     margin-top: 58px;
@@ -116,13 +113,11 @@ header .logo {
     font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
 }
-
 .details-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.2rem;
 }
-
 .detail-item {
     background-color: rgba(26, 26, 26, 0.8);
     padding: 2.1rem;
@@ -130,22 +125,18 @@ header .logo {
     text-align: center;
     transition: transform 0.3s ease;
 }
-
 .detail-item:hover {
     transform: translateY(-12px);
 }
-
 .detail-item i {
     font-size: 3rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
-
 .detail-item h3 {
     font-size: 1.7rem;
     margin-bottom: 0.6rem;
 }
-
 .tournament-grid {
     display: flex;
     flex-wrap: wrap;
@@ -153,14 +144,12 @@ header .logo {
     gap: 3rem;
     padding: 2rem 0;
 }
-
 .box {
     width: 320px;
     height: 420px;
     perspective: 1000px;
     z-index: 1;
 }
-
 .card-inner {
     width: 100%;
     height: 100%;
@@ -391,6 +380,15 @@ footer {
     color: #fff;
     cursor: pointer;
 }
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important; /* Ensure hidden on wider screens */
+    }
+    .side-navbar {
+        display: none; /* Sidebar should also remain hidden */
+    }
+}
+
 @media screen and (max-width: 1024px) {
     header {
         padding: 0.4em 0.8em;
@@ -439,9 +437,6 @@ footer {
     .side-navbar.active {
         right: 0;
     }
-    .side-navbar.active + .menu-toggle {
-        display: none;
-    }
     header .logo {
         font-size: 1.2em;
     }
@@ -451,7 +446,6 @@ footer {
     .tournament-details .section-title {
         font-size: 1.769rem;
     }
-    
     .tournament-grid {
         gap: 0.69rem;
     }
@@ -489,7 +483,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
     .footer-section {
         text-align: center;
         padding: 0;
@@ -511,35 +504,6 @@ footer {
     .contact-form {
         display: none;
     }
-}
-
-@media only screen and (max-width: 480px) {
-    .footer-content {
-        padding: 0 9px;
-    }
-
-    .footer-section h2 {
-        font-size: 1.269rem;
-    }
-
-    .about .logo-text {
-        font-size: 1.569rem;
-    }
-    .footer-section {
-        padding: 0 9px;
-        margin-bottom: 18.69px;
-    }
-    .socials a {
-        width: 30px;
-        height: 30px;
-        line-height: 28px;
-    }
-    .footer-bottom {
-        font-size: 0.769rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .tournament-details {
         background-color: #000;
         padding: 18.69px 0;
@@ -670,7 +634,31 @@ footer {
             display: inline-block;
         }
 }
-@media screen and (max-width: 480px) {
+
+@media only screen and (max-width: 480px) {
+    .footer-content {
+        padding: 0 9px;
+    }
+
+    .footer-section h2 {
+        font-size: 1.269rem;
+    }
+
+    .about .logo-text {
+        font-size: 1.569rem;
+    }
+    .footer-section {
+        padding: 0 9px;
+        margin-bottom: 18.69px;
+    }
+    .socials a {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+    }
+    .footer-bottom {
+        font-size: 0.769rem;
+    }
     .detail-item {
         width: 100px;
         height: 100px;
@@ -685,4 +673,5 @@ footer {
         font-size: 10px;
     }
 }
+
 

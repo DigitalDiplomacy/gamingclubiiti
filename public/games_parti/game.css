@@ -488,13 +488,12 @@ footer {
     }
 
     header {
-        padding: 1.2rem 0rem;
+        padding: 1.169rem 0rem;
     }
 
     header .logo {
-        font-size: 1.35em;
+        font-size: 1.269em;
     }
-
     header ul {
         display: none;
     }
@@ -541,6 +540,7 @@ footer {
         bottom: 0.625rem;
     }
     .footer-content {
+        margin-bottom: 0;
         padding: 0.9em 0;
         flex-direction: column;
         text-align: center;

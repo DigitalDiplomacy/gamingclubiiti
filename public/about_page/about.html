@@ -346,6 +346,50 @@
 
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+    const sideNavbar = document.querySelector('.side-navbar');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    // Function to open side navbar
+    function openSideNav() {
+        sideNavbar.classList.add('active');
+        mobileMenuIcon.classList.add('menu-hidden');
+    }
+    
+    // Function to close side navbar
+    function closeSideNav() {
+        sideNavbar.classList.remove('active');
+        mobileMenuIcon.classList.remove('menu-hidden');
+    }
+    
+    // Add click event for menu icon
+    mobileMenuIcon.addEventListener('click', function(event) {
+        openSideNav();
+        event.stopPropagation();
+    });
+    
+    // Add click event for close button
+    closeBtn.addEventListener('click', function(event) {
+        closeSideNav();
+        event.stopPropagation();
+    });
+    
+    // Close side navbar when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInside = sideNavbar.contains(event.target) || 
+                            mobileMenuIcon.contains(event.target);
+        
+        if (!isClickInside && sideNavbar.classList.contains('active')) {
+            closeSideNav();
+        }
+    });
+
+    // Prevent clicks inside the side navbar from closing it
+    sideNavbar.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+});
         // Apply global smooth transitions and animations
 document.addEventListener("DOMContentLoaded", () => {
     const style = document.createElement("style");
@@ -459,19 +503,7 @@ document.addEventListener('DOMContentLoaded', function() {
     adjustHeroCards();
     window.addEventListener('resize', adjustHeroCards);
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-    const sideNavbar = document.querySelector('.side-navbar');
-    const closeBtn = document.querySelector('.close-btn');
-    mobileMenuIcon.addEventListener('click', function() {
-        sideNavbar.classList.add('active');
-        mobileMenuIcon.style.display='none';
-    });
-    closeBtn.addEventListener('click', function() {
-        sideNavbar.classList.remove('active');
-        closeBtn.style.display='none';
-    });  
-});
+
 document.addEventListener('DOMContentLoaded', function() {
     const logoElement = document.querySelector('.name .logo');
     if (window.innerWidth <= 768) { 
