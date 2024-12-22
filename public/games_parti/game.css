@@ -454,7 +454,6 @@ footer {
     .side-navbar.active {
         right: 0;
     }
-    /* Hide menu toggle when sidebar is active */
     .side-navbar.active + .menu-toggle {
         display: none;
     }
