@@ -21,12 +21,12 @@
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: rgb(197, 197, 197);;
+    color: rgb(197, 197, 197);
     line-height: 1.5;
 }
 .preloader {
@@ -40,10 +40,13 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-}.loading-gif {
-    width: 49%;  
 }
-
+.loading-gif {
+    width: 49%;
+}
+.bold_text {
+    font-weight: 900;
+}
 header {
     position: fixed;
     top: 0;
@@ -58,7 +61,7 @@ header {
     z-index: 9998;
 }
 
-.navbar a{
+.navbar a {
     font-size: 0.85em;
     color: #fff;
     text-decoration: none;
@@ -84,17 +87,17 @@ header .logo {
     letter-spacing: 3px;
     transition: 0.6s;
 }
-.name{
+.name {
     display: flex;
 }
-.name img{
+.name img {
     padding-top: 7px;
     cursor: pointer;
     height: 48px;
-    transform: scale(2.35); 
+    transform: scale(2.35);
 }
-.name img:hover{
-    transform: scale(2.05); 
+.name img:hover {
+    transform: scale(2.05);
 }
 .tournament-details {
     padding: 6.9rem 0;
@@ -110,7 +113,7 @@ header .logo {
     margin-top: 58px;
     margin-bottom: 3.4rem;
     color: var(--primary-color);
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-size: 3rem;
 }
 .details-grid {
@@ -161,12 +164,20 @@ header .logo {
 .box:hover .card-inner {
     transform: rotateY(180deg);
 }
-.card-front, .card-back {
+.card-front,
+.card-back {
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    clip-path: polygon(0 calc(30px),calc(30px) 0, 100% 0, 100% calc(100% - 30px), calc(100% - 25px) 100%, 0 100%);
+    clip-path: polygon(
+        0 calc(30px),
+        calc(30px) 0,
+        100% 0,
+        100% calc(100% - 30px),
+        calc(100% - 25px) 100%,
+        0 100%
+    );
     overflow: hidden;
     z-index: 1;
 }
@@ -176,10 +187,10 @@ header .logo {
     flex-direction: column;
 }
 .card-front img {
-    object-fit: fill; 
-    width: 100%; 
+    object-fit: fill;
+    width: 100%;
     height: 100%;
-    transition: 0.3s ease; 
+    transition: 0.3s ease;
 }
 .card-front h3 {
     flex-grow: 1;
@@ -240,7 +251,7 @@ footer {
     width: 100%;
     background-color: #1a1a1a;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 50px 0 20px;
     font-size: 16px;
     line-height: 1.5;
@@ -391,7 +402,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
     header {
-        font-size: 1.0em;
+        font-size: 1em;
         padding: 0.42em 0.82em;
     }
     header.sticky {
@@ -400,7 +411,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    *{
+    * {
         overflow-x: hidden;
     }
     ::-webkit-scrollbar {
@@ -415,18 +426,18 @@ footer {
     .navbar {
         display: none;
     }
-    
+
     .detail-item i {
         font-size: 0.769rem;
         color: var(--primary-color);
         margin-bottom: 0.69rem;
     }
-    
+
     .detail-item h4 {
         font-size: 1.3rem;
         margin-bottom: 0.6rem;
     }
-    .detail-item p{
+    .detail-item p {
         font-size: 0.769rem;
     }
     .menu-toggle {
@@ -447,13 +458,13 @@ footer {
     .tournament-grid {
         gap: 0.69rem;
     }
-    .previous-tournaments{
+    .previous-tournaments {
         margin-bottom: 3.69em;
     }
-    .previous-tournaments .container h2{
+    .previous-tournaments .container h2 {
         font-size: 1.469em;
     }
-    .upcoming-events .container h2{
+    .upcoming-events .container h2 {
         margin-top: 6.9px;
         font-size: 1.469em;
     }
@@ -472,7 +483,7 @@ footer {
     .previous-tournaments .box.card-back .learn-more {
         padding: 0.6rem 1.2rem;
     }
-    .previous-tournaments .box .card-front img :hover{
+    .previous-tournaments .box .card-front img :hover {
         display: none;
     }
 }
@@ -542,7 +553,7 @@ footer {
     .tournament-details .detail-item.active i {
         display: none;
     }
-    .tournament-details .detail-item h4, 
+    .tournament-details .detail-item h4,
     .tournament-details .detail-item p {
         position: absolute;
         padding-right: 100px;
@@ -569,68 +580,68 @@ footer {
     }
 
     .previous-tournaments .box .card-inner {
-            transform: none;
-        }
-        .upcoming-events .box .card-inner {
-            transform: none;
-        }
-        .tournament-grid .card-front {
-            font-size: 0.8969px;
-            z-index: 2;
-            opacity: 1; 
-            backface-visibility: hidden; 
-            transition: opacity 0.3s ease-in-out;
-        }
-        .tournament-grid .card-back {
-            font-size: smaller;
-            opacity: 0; 
-            z-index: 1;
-            transform: none; 
-            transition: opacity 0.3s ease-in-out;
-        }
-        .tournament-grid .card-front h3{
-            font-weight:bolder;
-            font-size: 0.869rem;
-        }
-        .tournament-grid .card-back h3{
-            font-size: 0.669rem;
-        }
-        .tournament-grid .card-back p{
-            font-size: 0.569rem;
-        }
-        .tournament-grid .card-back .learn-more{
-            font-size: 0.669rem;
-            padding:2px 3px;
-        }
-        .box:hover .card-front {
-            opacity: 0; 
-        }
-    
-        .box:hover .card-back {
-            opacity: 1; 
-        }
-        .card-back h3 {
-            font-size: 0.969rem;
-            color: #00ffff;
-            margin-bottom: 0.8rem;
-        }
-        .card-back p {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.8rem;
-        }
-        
-        .learn-more {
-            padding: 0.2169rem 0.369rem;
-            background-color: #00ffff;
-            color: #16213e;
-            text-decoration: none;
-            border-radius: 1.2px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
+        transform: none;
+    }
+    .upcoming-events .box .card-inner {
+        transform: none;
+    }
+    .tournament-grid .card-front {
+        font-size: 0.8969px;
+        z-index: 2;
+        opacity: 1;
+        backface-visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .tournament-grid .card-back {
+        font-size: smaller;
+        opacity: 0;
+        z-index: 1;
+        transform: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .tournament-grid .card-front h3 {
+        font-weight: bolder;
+        font-size: 0.869rem;
+    }
+    .tournament-grid .card-back h3 {
+        font-size: 0.669rem;
+    }
+    .tournament-grid .card-back p {
+        font-size: 0.569rem;
+    }
+    .tournament-grid .card-back .learn-more {
+        font-size: 0.669rem;
+        padding: 2px 3px;
+    }
+    .box:hover .card-front {
+        opacity: 0;
+    }
+
+    .box:hover .card-back {
+        opacity: 1;
+    }
+    .card-back h3 {
+        font-size: 0.969rem;
+        color: #00ffff;
+        margin-bottom: 0.8rem;
+    }
+    .card-back p {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.8rem;
+    }
+
+    .learn-more {
+        padding: 0.2169rem 0.369rem;
+        background-color: #00ffff;
+        color: #16213e;
+        text-decoration: none;
+        border-radius: 1.2px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -671,5 +682,3 @@ footer {
         font-size: 10px;
     }
 }
-
-
