@@ -172,6 +172,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+let links = [
+    "https://unstop.com/o/YVrQ7P1?lb=9utVUlM&utm_medium=Share&utm_source=WhatsApp",
+    "https://unstop.com/o/4lvd3JI?lb=9utVUlM&utm_medium=Share&utm_source=WhatsApp",
+    "https://unstop.com/o/cvdrnoX?lb=9utVUlM&utm_medium=Share&utm_source=WhatsApp",
+];
+let upcomingTourBox = document.querySelectorAll(".upcomingBox");
+console.log(upcomingTourBox);
+for (let i = 0; i < upcomingTourBox.length; i++) {
+    upcomingTourBox[i].addEventListener("click", () => {
+        window.location.href = links[i];
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const detailItems = document.querySelectorAll(".detail-item");
     detailItems.forEach((item) => {
